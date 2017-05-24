@@ -11,6 +11,8 @@ namespace _10_substrings
         static void Main(string[] args)
         {
             Console.WriteLine("T(2) is: {0}", Count(2));
+            Console.WriteLine("T(3) is: {0}", Count(3));
+            Console.WriteLine("T(4) is: {0}", Count(4));
             Console.WriteLine("T(5) is: {0}", Count(5));
             Console.WriteLine("T(18) is: {0}", Count(18));
 
@@ -38,21 +40,31 @@ namespace _10_substrings
 
         static bool IsNumberTenString(int n)
         {
-            bool res = false;
+            bool subbool = false;
             string number = n.ToString();
+            bool[] res = new bool[number.Length];
             string substring;
 
             for (int i = 0; i < number.Length; i++)
             {
+                subbool = false;
                 for (int j = 2; j < number.Length - i + 1; j++)
                 {
                     substring = number.Substring(i, j);
                     if (SubIsTenString(substring))
-                    { res = true; break; }
+                    { subbool = true; break; }
                 }
-
+                if (subbool)
+                    res[i] = true;
+                else
+                    res[i] = false;
             }
-            return res;
+            bool result = res[0];
+            for (int i = 1; i < res.Length; i++)
+            {
+                result &= res[i];
+            }
+            return result;
         }
 
         static int Count(int n)
