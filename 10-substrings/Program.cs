@@ -10,11 +10,11 @@ namespace _10_substrings
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("T(2) is: {0}", Count(2));
-            Console.WriteLine("T(3) is: {0}", Count(3));
-            Console.WriteLine("T(4) is: {0}", Count(4));
-            Console.WriteLine("T(5) is: {0}", Count(5));
-            Console.WriteLine("T(18) is: {0}", Count(18));
+            Console.WriteLine("T(2) is: {0}", Count(10,2));
+            Console.WriteLine("T(3) is: {0}", Count(10, 3));
+            //Console.WriteLine("T(4) is: {0}", Count(4));
+            Console.WriteLine("T(5) is: {0}", Count(10,5));
+            //Console.WriteLine("T(18) is: {0}", Count(18));
 
         }
 
@@ -40,25 +40,32 @@ namespace _10_substrings
 
         static bool IsNumberTenString(int n)
         {
-            bool subbool = false;
             string number = n.ToString();
             bool[] res = new bool[number.Length];
             string substring;
+            bool result = false;
 
             for (int i = 0; i < number.Length; i++)
             {
-                subbool = false;
                 for (int j = 2; j < number.Length - i + 1; j++)
                 {
                     substring = number.Substring(i, j);
                     if (SubIsTenString(substring))
-                    { subbool = true; break; }
+                    {
+                        for (int k = 0; k < substring.Length; k++)
+                        {
+                            res[i + k] = true;
+                        }
+                    }
+                    if (CheckResult(res)) { result = true; break; }
                 }
-                if (subbool)
-                    res[i] = true;
-                else
-                    res[i] = false;
+                if (CheckResult(res)) { result = true; break; }
             }
+            return result;
+        }
+
+        static bool CheckResult(bool[] res)
+        {
             bool result = res[0];
             for (int i = 1; i < res.Length; i++)
             {
@@ -66,16 +73,14 @@ namespace _10_substrings
             }
             return result;
         }
-
-        static int Count(int n)
+        static int Count(int s, int n)
         {
             int res = 0;
 
-            for (int i = 10; i < Math.Pow(10, n) + 1; i++)
+            for (int i = s; i < Math.Pow(10, n) + 1; i++)
             {
                 if (IsNumberTenString(i)) res++;
             }
-
             return res;
         }
     }
