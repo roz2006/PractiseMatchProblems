@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LargestPrimeFactor
 {
-    class Program
+    public class PrimieFactor
     {
         static void Main(string[] args)
         {
@@ -14,7 +14,7 @@ namespace LargestPrimeFactor
             Console.WriteLine(Calculate(600851475143));
         }
 
-        static bool IsPrime(long n)
+        public static bool IsPrime(long n)
         {
             bool _isPrime = false;
 
@@ -43,7 +43,7 @@ namespace LargestPrimeFactor
                     _largestPrime = counter;
             } while (counter < Math.Ceiling(Math.Sqrt(max)));
 
-            if((_largestPrime==0)&&IsPrime(max))
+            if ((_largestPrime == 0) && IsPrime(max))
                 _largestPrime = max;
 
             return _largestPrime;

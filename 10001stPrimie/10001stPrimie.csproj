@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8DAE3855-9A2A-46F6-8D8D-CF1B5A4002D5}</ProjectGuid>
+    <ProjectGuid>{B98BC602-AD60-4DD1-971B-EF9654A8E86A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LargestPrimeFactor</RootNamespace>
-    <AssemblyName>LargestPrimeFactor</AssemblyName>
+    <RootNamespace>_10001stPrimie</RootNamespace>
+    <AssemblyName>10001stPrimie</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrimieFactor.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LargestPrimeFactor\LargestPrimeFactor.csproj">
+      <Project>{8dae3855-9a2a-46f6-8d8d-cf1b5a4002d5}</Project>
+      <Name>LargestPrimeFactor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

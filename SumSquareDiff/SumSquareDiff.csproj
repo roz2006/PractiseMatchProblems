@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8DAE3855-9A2A-46F6-8D8D-CF1B5A4002D5}</ProjectGuid>
+    <ProjectGuid>{57A4B76E-3D9F-4861-99C3-F2552D74C6ED}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LargestPrimeFactor</RootNamespace>
-    <AssemblyName>LargestPrimeFactor</AssemblyName>
+    <RootNamespace>SumSquareDiff</RootNamespace>
+    <AssemblyName>SumSquareDiff</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrimieFactor.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
