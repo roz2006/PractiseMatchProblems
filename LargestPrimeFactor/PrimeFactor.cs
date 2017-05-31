@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LargestPrimeFactor
 {
-    public class PrimieFactor
+    public class PrimeFactor
     {
         static void Main(string[] args)
         {
@@ -18,16 +18,30 @@ namespace LargestPrimeFactor
         {
             bool _isPrime = false;
 
-            if (n == 1 || n == 2)
+            if (n == 1)
                 _isPrime = false;
+            else if (n == 2)
+                _isPrime = true;
             else
             {
                 _isPrime = true;
-                for (long i = n - 1; i > 1; i--)
+                long loopcounter = (int)n / 2;
+                int i = 2;
+                do
                 {
                     if (n % i == 0)
                     { _isPrime = false; break; }
-                }
+                    else
+                        loopcounter = (int)n / i;
+                    i++;
+                } while (i <= loopcounter);
+                //for (long i = loopcounter; i > 1; i--)
+                //{
+                //    if (n % i == 0)
+                //    { _isPrime = false; break; }
+                //    else
+                //        loopcounter = (int)n / i;
+                //}
             }
             return _isPrime;
         }

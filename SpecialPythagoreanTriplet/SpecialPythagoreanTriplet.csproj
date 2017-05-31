@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8DAE3855-9A2A-46F6-8D8D-CF1B5A4002D5}</ProjectGuid>
+    <ProjectGuid>{C692135C-2D9C-46A9-98B2-FCC8655A484D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LargestPrimeFactor</RootNamespace>
-    <AssemblyName>LargestPrimeFactor</AssemblyName>
+    <RootNamespace>SpecialPythagoreanTriplet</RootNamespace>
+    <AssemblyName>SpecialPythagoreanTriplet</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrimeFactor.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

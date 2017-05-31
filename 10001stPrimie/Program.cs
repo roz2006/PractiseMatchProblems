@@ -15,7 +15,7 @@ namespace _10001stPrimie
             int input = 10001;//10001
             do
             {
-                if (LargestPrimeFactor.PrimieFactor.IsPrime(counter))
+                if (LargestPrimeFactor.PrimeFactor.IsPrime(counter))
                     index++;
                 if (index == input)
                     break;

@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10001stPrimie", "10001stPri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestProductInSeries", "LargestProductInSeries\LargestProductInSeries.csproj", "{1ACA1518-FAC0-4EED-8C17-2B436C49133B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecialPythagoreanTriplet", "SpecialPythagoreanTriplet\SpecialPythagoreanTriplet.csproj", "{C692135C-2D9C-46A9-98B2-FCC8655A484D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumPrime", "SumPrime\SumPrime.csproj", "{DD82A544-DE5F-48CF-A0DC-F38FB7FD574D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{1ACA1518-FAC0-4EED-8C17-2B436C49133B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ACA1518-FAC0-4EED-8C17-2B436C49133B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ACA1518-FAC0-4EED-8C17-2B436C49133B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C692135C-2D9C-46A9-98B2-FCC8655A484D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C692135C-2D9C-46A9-98B2-FCC8655A484D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C692135C-2D9C-46A9-98B2-FCC8655A484D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C692135C-2D9C-46A9-98B2-FCC8655A484D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD82A544-DE5F-48CF-A0DC-F38FB7FD574D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD82A544-DE5F-48CF-A0DC-F38FB7FD574D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD82A544-DE5F-48CF-A0DC-F38FB7FD574D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD82A544-DE5F-48CF-A0DC-F38FB7FD574D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
