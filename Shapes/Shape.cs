@@ -9,5 +9,10 @@ namespace Shapes
     abstract class Shape
     {
         abstract public double Area{get;}
+
+        public virtual void Draw()
+        {
+            Console.WriteLine($"This is Base class Shape Draw");
+        }
     }
 }

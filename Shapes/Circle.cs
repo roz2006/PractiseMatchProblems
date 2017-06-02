@@ -20,6 +20,10 @@ namespace Shapes
             get { return Math.PI * Math.Pow(Radius, 2); }
 
         }
+        public override void Draw()
+        {
+            Console.WriteLine($"This is derived class Circle Draw");
+        }
 
     }
 }

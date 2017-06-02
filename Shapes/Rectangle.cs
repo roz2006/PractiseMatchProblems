@@ -28,5 +28,9 @@ namespace Shapes
             }
 
         }
+        public override void Draw()
+        {
+            Console.WriteLine($"This is derived class Rectangle Draw");
+        }
     }
 }

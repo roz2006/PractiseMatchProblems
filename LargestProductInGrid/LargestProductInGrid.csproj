@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{33FEDC12-45B8-4A22-B524-034FB8657610}</ProjectGuid>
+    <ProjectGuid>{B8BE12CE-5C07-4A50-BEAD-D4BE507543EA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>RecursiveDataTypes</RootNamespace>
-    <AssemblyName>RecursiveDataTypes</AssemblyName>
+    <RootNamespace>LargestProductInGrid</RootNamespace>
+    <AssemblyName>LargestProductInGrid</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GenericNode.cs" />
-    <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

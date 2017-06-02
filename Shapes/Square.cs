@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    class Square: Rectangle
+    class Square : Rectangle
     {
         //public new double Width { get; private set; }
         //public Square(double w):base(w,w)
@@ -22,12 +22,19 @@ namespace Shapes
 
         public Square(double v) : base(v, v) { }
 
-        
 
-        public override double Area {
-            get {
+
+        public override double Area
+        {
+            get
+            {
                 return Width * Width;
             }
+        }
+
+        public override void Draw()
+        {
+            Console.WriteLine($"This is derived class Square Draw");
         }
     }
 }
