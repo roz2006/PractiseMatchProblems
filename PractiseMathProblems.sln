@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighlyDivisibleTriangularNu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerablePractice", "IEnumerablePractice\IEnumerablePractice.csproj", "{BD52DC7E-51E2-430E-B71A-3D2D63A1B8CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargeSum", "LargeSum\LargeSum.csproj", "{A380415E-88D4-4039-9147-7613C704AFC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +123,10 @@ Global
 		{BD52DC7E-51E2-430E-B71A-3D2D63A1B8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD52DC7E-51E2-430E-B71A-3D2D63A1B8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD52DC7E-51E2-430E-B71A-3D2D63A1B8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A380415E-88D4-4039-9147-7613C704AFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A380415E-88D4-4039-9147-7613C704AFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A380415E-88D4-4039-9147-7613C704AFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A380415E-88D4-4039-9147-7613C704AFC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,5 +148,6 @@ Global
 		{33FEDC12-45B8-4A22-B524-034FB8657610} = {3C974A2F-4310-4DAF-B45E-3A2243B551EA}
 		{7FCC921C-A750-49D8-9CAF-D3B95498A0EC} = {3C974A2F-4310-4DAF-B45E-3A2243B551EA}
 		{B8BE12CE-5C07-4A50-BEAD-D4BE507543EA} = {147AF608-524F-4C60-B537-71D888083ADC}
+		{55979022-19E1-4038-84BC-6A441FCA76BA} = {147AF608-524F-4C60-B537-71D888083ADC}
 	EndGlobalSection
 EndGlobal
