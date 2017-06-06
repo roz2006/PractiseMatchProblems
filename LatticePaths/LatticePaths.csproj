@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BD52DC7E-51E2-430E-B71A-3D2D63A1B8CE}</ProjectGuid>
+    <ProjectGuid>{C813730C-92C8-4C4F-B2D0-3B9084E6C437}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>IEnumerablePractice</RootNamespace>
-    <AssemblyName>IEnumerablePractice</AssemblyName>
+    <RootNamespace>LatticePaths</RootNamespace>
+    <AssemblyName>LatticePaths</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,10 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="Cards.cs" />
-    <Compile Include="Deck.cs" />
-    <Compile Include="MyList.cs" />
+    <Compile Include="Lattice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

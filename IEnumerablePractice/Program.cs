@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +9,12 @@ namespace IEnumerablePractice
 {
     class Program
     {
-        static IEnumerable<int> YiledReturn()
-        {
-            yield return 1;
-            yield return 2;
-            yield return 3;
-        }
-
-
+        //static IEnumerable<int> YiledReturn()
+        //{
+        //    yield return 1;
+        //    yield return 2;
+        //    yield return 3;
+        //}
         static void Main(string[] args)
         {
             //foreach (var i in YiledReturn())
@@ -55,8 +54,23 @@ namespace IEnumerablePractice
             Console.WriteLine("After shuffling:");
             foreach (Cards c in myDeck)
             {
-                Console.WriteLine(c._suit+"/"+c._rank);
+                Console.WriteLine(c._suit + "/" + c._rank);
             }
+
+            Car[] carArray = new Car[]{
+            new Car("white",1977),
+            new Car("black",1980),
+            new Car("red",2000) };
+
+            foreach (var car in carArray)
+            {
+                Console.WriteLine("It is a {0} car from year {1}.",car.Color,car.Year);
+            }  
+            
+            //IEnumerable GetNext(Car[] a, int index)
+            //{
+            //    yield return a[index];
+            //}
         }
     }
 }
