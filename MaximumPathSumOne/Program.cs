@@ -10,11 +10,12 @@ namespace MaximumPathSumOne
 {
     class Program
     {
+        static int sum = 0;
         static void Main(string[] args)
         {
             string filename = @"c:\temp\triangle.txt";
-            List<int>[] Numbers=GetTriangle(filename);
-
+            Calculate(filename);
+            
         }
 
         static List<int>[] GetTriangle(string filename)
@@ -33,6 +34,23 @@ namespace MaximumPathSumOne
                 numbers[i] = l;
             }
             return numbers;
+        }
+
+        static void SubSum(List<int> a, List<int> b)
+        {
+            
+            
+        }
+
+        static void Calculate(string filename)
+        {
+            List<int>[] Numbers = GetTriangle(filename);
+            int i = 0;
+            do
+            {
+                SubSum(Numbers[i], Numbers[i + 1]);
+            } while (i < Numbers.Length);
+
         }
     }
 }
