@@ -18,22 +18,24 @@ namespace LongestCollatzSequence
         static void Calculate()
         {
             int maxcount = 0;
-            for (int i = 1; i < 2000000; i++)
+            for (int i = 1; i < 500000; i++)
             {
                 int next = 0;
                 int count = 1;
                 int start = i;
                 do
                 {
-                    if ((ht.ContainsKey(start)))
-                    { count += (int)ht[start] - 1; break; }
+                    //if (ht.ContainsKey(start))
+                    //{ count += (int)ht[start] - 1; 
+                    //break; 
+                
                     next = GetNextCollatzNumber(start);
                     start = next;
                     count++;
                 } while (next != 1);
 
-                if (!ht.Contains(i))
-                    ht.Add(i, count);
+                //if (!ht.Contains(i))
+                //    ht.Add(i, count);
 
                 if (count > maxcount)
                     maxcount = count;
