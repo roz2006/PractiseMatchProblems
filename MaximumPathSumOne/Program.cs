@@ -9,13 +9,11 @@ namespace MaximumPathSumOne
 {
     class Program
     {
-        static int sum = 0;
-        private static int length;
-
         static void Main(string[] args)
         {
             string filename = @"c:\temp\triangle.txt";
-            Calculate(filename);
+            Triangle t = new Triangle(Triangle.GetTriangle(filename));
+            Triangle.CalculateSum(t);
         }
     }
 }

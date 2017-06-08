@@ -11,18 +11,43 @@ namespace MaximumPathSumOne
     {
         public List<int>[] Numbers;
 
+        public Triangle(List<int>[] n)
+        {
+            Numbers = n;
+        }
+
         public Triangle[] MakeSubTriangle(Triangle t)
         {
             int size = t.Numbers.Count() - 1;
-            List<int>[] newNumbers = new List<int>[size];
+            List<int>[] newNumbersLeft = new List<int>[size];
+            List<int>[] newNumbersRight = new List<int>[size];
 
+            for (int i = 0; i < size; i++)
+            {
+                List<int> newTriangleLine = new List<int>();
+                for (int j = 0; j < i + 1; j++)
+                {
+                    newTriangleLine.Add(t.Numbers[i + 1][j]);
+                }
+                newNumbersLeft[i] = newTriangleLine;
+            }
 
+            for (int i = 0; i < size; i++)
+            {
+                List<int> newTriangleLine = new List<int>();
+                for (int j = 0; j < i + 1; j++)
+                {
+                    newTriangleLine.Add(t.Numbers[i + 1][j + 1]);
+                }
+                newNumbersRight[i] = newTriangleLine;
+            }
+            return new Triangle[2] { new Triangle(newNumbersLeft), new Triangle(newNumbersRight) };
         }
 
-        static void GetTriangle(string filename)
+        public static List<int>[] GetTriangle(string filename)
         {
             string[] alllines = System.IO.File.ReadAllLines(filename);
-            List<int>[] Numbers = new List<int>[alllines.Length];
+            List<int>[] numbers = new List<int>[alllines.Length];
             Regex regex = new Regex(@"\s");
             for (int i = 0; i < alllines.Length; i++)
             {
@@ -32,32 +57,20 @@ namespace MaximumPathSumOne
                 {
                     l.Add(int.Parse(bit));
                 }
-                Numbers[i] = l;
+                numbers[i] = l;
             }
+            return numbers;
         }
 
-        static void SubMaxSum(List<int> a, List<int> b)
+       public static int CalculateSum(Triangle t)
         {
             int sum = 0;
-            for (int i = 0; i < a.Count; i++)
+            if (t.Numbers.Count() == 2)
             {
-                if (sum < a[i] + b[i])
-                    sum = a[i] + b[i];
-                if (sum < a[i] + b[i + 1])
-                    sum = a[i] + b[i + 1];
+                int sum1 = t.Numbers[0][0] + t.Numbers[1][0];
+                int sum2 = t.Numbers[0][0] + t.Numbers[1][1];
+                return (sum1 > sum2) ? sum1 : sum2;
             }
-        }
-
-        static int Calculate()
-        {
-            int i = 0;
-            int sum = Numbers[i][0];
-            do
-            {
-                if (Numbers[i] Numbers[i + 1].Max;
-                SubMaxSum(Numbers[i], Numbers[i + 1]);
-            } while (i < Numbers.Length);
-
             return sum;
         }
     }
