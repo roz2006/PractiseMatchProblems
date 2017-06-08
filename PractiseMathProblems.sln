@@ -49,6 +49,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCollatzSequence", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatticePaths", "LatticePaths\LatticePaths.csproj", "{C813730C-92C8-4C4F-B2D0-3B9084E6C437}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberLetterCounts", "NumberLetterCounts\NumberLetterCounts.csproj", "{76784F9B-C49D-434F-B0F8-07A5B83042B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumPathSumOne", "MaximumPathSumOne\MaximumPathSumOne.csproj", "{B8BACCDA-BEF2-4CC1-BC77-5C25B64C4FB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,6 +143,14 @@ Global
 		{C813730C-92C8-4C4F-B2D0-3B9084E6C437}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C813730C-92C8-4C4F-B2D0-3B9084E6C437}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C813730C-92C8-4C4F-B2D0-3B9084E6C437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76784F9B-C49D-434F-B0F8-07A5B83042B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76784F9B-C49D-434F-B0F8-07A5B83042B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76784F9B-C49D-434F-B0F8-07A5B83042B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76784F9B-C49D-434F-B0F8-07A5B83042B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8BACCDA-BEF2-4CC1-BC77-5C25B64C4FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BACCDA-BEF2-4CC1-BC77-5C25B64C4FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BACCDA-BEF2-4CC1-BC77-5C25B64C4FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BACCDA-BEF2-4CC1-BC77-5C25B64C4FB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,5 +176,6 @@ Global
 		{BD52DC7E-51E2-430E-B71A-3D2D63A1B8CE} = {3C974A2F-4310-4DAF-B45E-3A2243B551EA}
 		{A380415E-88D4-4039-9147-7613C704AFC0} = {147AF608-524F-4C60-B537-71D888083ADC}
 		{29A44559-E975-4302-8F2D-4E12C0F728C3} = {147AF608-524F-4C60-B537-71D888083ADC}
+		{C813730C-92C8-4C4F-B2D0-3B9084E6C437} = {147AF608-524F-4C60-B537-71D888083ADC}
 	EndGlobalSection
 EndGlobal

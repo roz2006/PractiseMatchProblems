@@ -9,7 +9,7 @@ namespace LongestCollatzSequence
 {
     class Program
     {
-        static Hashtable ht = new Hashtable();
+        static Dictionary<long, long> dt = new Dictionary<long, long>();
         static void Main(string[] args)
         {
             Calculate();
@@ -17,38 +17,39 @@ namespace LongestCollatzSequence
 
         static void Calculate()
         {
-            int maxcount = 0;
-            for (int i = 1; i < 2000000; i++)
+            long maxcount = 0;
+            for (int i = 1; i < 1000000; i++)
             {
-                int next = 0;
-                int count = 1;
-                int start = i;
+                long count = 1;
+                long next = i;
                 do
                 {
-                    if ((ht.ContainsKey(start)))
-                    { count += (int)ht[start] - 1; break; }
-                    next = GetNextCollatzNumber(start);
-                    start = next;
+                    if ((dt.ContainsKey(next)))
+                    { count += dt[next] - 1; break; }
+
+                    if (next % 2 == 0)
+                        next = (long)next / 2;
+                    else
+                        next = 3 * next + 1;
                     count++;
                 } while (next != 1);
 
-                if (!ht.Contains(i))
-                    ht.Add(i, count);
+                if (!dt.ContainsKey(i))
+                    dt.Add(i, count);
 
                 if (count > maxcount)
                     maxcount = count;
             }
-            Console.WriteLine(maxcount);
+            GetKey(dt, maxcount);
         }
 
-        static int GetNextCollatzNumber(int n)
+        static void GetKey(Dictionary<long, long> d, long v)
         {
-            int next = 0;
-            if (n % 2 == 0)
-                next = (int)n / 2;
-            else
-                next = 3 * n + 1;
-            return next;
+            foreach (long key in d.Keys)
+            {
+                if (d[key] == v)
+                    Console.WriteLine(key);
+            }
         }
     }
 }
