@@ -64,37 +64,21 @@ namespace MaximumPathSumOne
 
         public static int CalculateSum(Triangle t)
         {
+            int sum1 = 0;
+            int sum2 = 0;
             if (t.Numbers.Count() == 2)
             {
-                int sum1 = t.Numbers[0][0] + t.Numbers[1][0];
-                int sum2 = t.Numbers[0][0] + t.Numbers[1][1];
-                return (sum1 > sum2) ? sum1 : sum2;
+                sum1 = t.Numbers[1][0];
+                sum2 = t.Numbers[1][1];
             }
             else
             {
-                int subsum = 0;
                 List<int> allSums = new List<int>();
-                while (t.Numbers.Count() > 2)
-                {
-                    Triangle[] subTriangles = MakeSubTriangle(t);
-                    foreach (var st in subTriangles)
-                    {
-                        subsum = CalculateSum(st);
-                        allSums.Add(subsum);
-                    }
-                    int subsumleft = 0;
-                    int subsumright = 0;
-                    for (int i = 0; i < t.Numbers.Count(); i++)
-                    {
-                        subsumleft += t.Numbers[i][0];
-                        subsumright += t.Numbers[i][t.Numbers[i].Count - 1];
-                    }
-                    allSums.Add(subsumleft);
-                    allSums.Add(subsumright);
-                    subsum=allSums.Max();
-                }
-                return subsum;
+                Triangle[] subTriangles = MakeSubTriangle(t);
+                sum1 = CalculateSum(subTriangles[0]);
+                sum2 = CalculateSum(subTriangles[1]);
             }
+            return (sum1 > sum2) ? sum1+t.Numbers[0][0] : sum2 + t.Numbers[0][0];
         }
     }
 }

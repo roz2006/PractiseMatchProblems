@@ -11,9 +11,10 @@ namespace MaximumPathSumOne
     {
         static void Main(string[] args)
         {
-            string filename = @"c:\temp\triangle.txt";
+            string filename = @"D:\Visual Studio\Projects\PractiseMathProblems\MaximumPathSumOne\p067_triangle.txt";
             Triangle t = new Triangle(Triangle.GetTriangle(filename));
-            Triangle.CalculateSum(t);
+            Console.WriteLine(Triangle.CalculateSum(t));
+            Console.WriteLine();
         }
     }
 }
