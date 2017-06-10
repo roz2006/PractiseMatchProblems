@@ -11,15 +11,16 @@ namespace NumberLetterCounts
     {
         static void Main(string[] args)
         {
-            BigInteger n = Factorial(100);
-            Console.WriteLine(n);
-           char[] digits=n.ToString().ToCharArray();
-            int sum = 0;
-            for (int i = 0; i < digits.Length; i++)
-            {
-                sum += (int)Char.GetNumericValue(digits[i]);
-            }
-            Console.WriteLine(sum);
+            // BigInteger n = Factorial(100);
+            // Console.WriteLine(n);
+            //char[] digits=n.ToString().ToCharArray();
+            // int sum = 0;
+            // for (int i = 0; i < digits.Length; i++)
+            // {
+            //     sum += (int)Char.GetNumericValue(digits[i]);
+            // }
+            // Console.WriteLine(sum);
+            Console.WriteLine(Numbers.Calculate(10000));
         }
 
         static BigInteger Factorial(int n)

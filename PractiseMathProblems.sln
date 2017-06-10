@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-substrings", "10-substrings\10-substrings.csproj", "{5FCC062D-5434-4D67-9772-6E8793996DA6}"
 EndProject
@@ -49,7 +49,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCollatzSequence", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatticePaths", "LatticePaths\LatticePaths.csproj", "{C813730C-92C8-4C4F-B2D0-3B9084E6C437}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberLetterCounts", "NumberLetterCounts\NumberLetterCounts.csproj", "{76784F9B-C49D-434F-B0F8-07A5B83042B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmicableNumbers", "NumberLetterCounts\AmicableNumbers.csproj", "{76784F9B-C49D-434F-B0F8-07A5B83042B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumPathSumOne", "MaximumPathSumOne\MaximumPathSumOne.csproj", "{B8BACCDA-BEF2-4CC1-BC77-5C25B64C4FB1}"
 EndProject
@@ -177,5 +177,7 @@ Global
 		{A380415E-88D4-4039-9147-7613C704AFC0} = {147AF608-524F-4C60-B537-71D888083ADC}
 		{29A44559-E975-4302-8F2D-4E12C0F728C3} = {147AF608-524F-4C60-B537-71D888083ADC}
 		{C813730C-92C8-4C4F-B2D0-3B9084E6C437} = {147AF608-524F-4C60-B537-71D888083ADC}
+		{76784F9B-C49D-434F-B0F8-07A5B83042B5} = {147AF608-524F-4C60-B537-71D888083ADC}
+		{B8BACCDA-BEF2-4CC1-BC77-5C25B64C4FB1} = {147AF608-524F-4C60-B537-71D888083ADC}
 	EndGlobalSection
 EndGlobal
